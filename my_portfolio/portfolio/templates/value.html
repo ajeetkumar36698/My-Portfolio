@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    {% load static%}
+    <style>
+    .home{
+    width: 400px;
+    height: 300px
+    color: white;
+
+    }
+#bg{
+    background-size: 1540px 750px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+
+<!-- 50% 0 no-repeat fixed-->
+
+
+    </style>
+
+</head>
+<body id="bg" style="background-image: url('{% static "images/home_image.jpg"%}')";>
+        <center> <h1 style="color: yellow;">Student Marks prediction  Website</h1></center>
+    <center> <h1 style="color: white;">Developed by:....................</h1></center><br><br><br><br>
+<!--hello-->
+<!--<img src="{% static 'images/home_image.gif' %}" height="75" width="75" style="border-radius: 100%">-->
+<!--<img src="{% static 'images/home_image.jpg' %}"  height="710" width="1520">-->
+<form method="POST" novalidate>{% csrf_token %}
+
+<!--    <center><h1 style="color: black;">Predicte value is {{value}}</h1></center>-->
+
+</form>
+
+    <center><h1 style="color: black;">Predicte Marks is {{value}}</h1></center>
+
+
+<!--<form action="" method="post" novalidate>{% csrf_token %}-->
+<!--{{ form }}<br><br>-->
+<!--<input type="submit" value="Submit">-->
+<!--</form>-->
+<!--{{form}}-->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
